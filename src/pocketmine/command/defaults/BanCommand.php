@@ -32,8 +32,8 @@ class BanCommand extends VanillaCommand{
 	public function __construct($name){
 		parent::__construct(
 			$name,
-			"%pocketmine.command.ban.player.description",
-			"%pocketmine.command.ban.player.ban.usage"
+			"%ban.command.description",
+			"%ban.command.usage"
 		);
 		$this->setPermission("pocketmine.command.ban.player");
 	}
@@ -68,7 +68,7 @@ class BanCommand extends VanillaCommand{
 			$player->kick($reason !== "" ? "Banned by admin. Reason: " . $reason : "Banned by admin." . "Banned Until:" . date('r'), $until = "Forever");
 		}
 
-		Command::broadcastCommandMessage($sender, new TranslationContainer("%commands.ban.success", [$player !== null ? $player->getName() : $name]));
+		Command::broadcastCommandMessage($sender, new TranslationContainer("%ban.command.success", [$player !== null ? $player->getName() : $name]));
 
 		return true;
 	}
