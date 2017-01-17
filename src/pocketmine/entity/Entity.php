@@ -70,6 +70,9 @@ use pocketmine\plugin\Plugin;
 use pocketmine\Server;
 use pocketmine\utils\ChunkException;
 
+//Entity locations
+use pocketmine\entity\passive\Bat;
+
 abstract class Entity extends Location implements Metadatable{
 
 	const NETWORK_ID = -1;

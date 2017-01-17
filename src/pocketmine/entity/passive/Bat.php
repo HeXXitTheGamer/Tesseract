@@ -19,13 +19,14 @@
  *
  */
 
-namespace pocketmine\entity;
+namespace pocketmine\entity\passive;
 
 use pocketmine\nbt\tag\ByteTag;
 use pocketmine\level\format\Chunk;
 use pocketmine\network\protocol\AddEntityPacket;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\Player;
+use pocketmine\entity\FlyingAnimal;
 
 class Bat extends FlyingAnimal{
 
