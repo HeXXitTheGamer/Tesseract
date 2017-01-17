@@ -19,7 +19,7 @@
  *
  */
 
-namespace pocketmine\entity;
+namespace pocketmine\entity\passive;
 
 use pocketmine\block\Wool;
 use pocketmine\nbt\tag\ByteTag;

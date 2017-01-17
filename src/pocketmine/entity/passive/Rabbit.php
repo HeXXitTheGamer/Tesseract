@@ -19,7 +19,7 @@
  *
  */
 
-namespace pocketmine\entity;
+namespace pocketmine\entity\passive;
 
 use pocketmine\item\enchantment\Enchantment;
 use pocketmine\event\entity\EntityDamageEvent;
